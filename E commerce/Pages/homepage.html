@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <link rel="stylesheet" href="../Styles/homepage.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="Contactus.html">Contact Us</a></li>
+            <li><a href="Aboutus.html">About Us</a></li>
+            <li><a href="cart.html">Cart</a><div id="cartCounter">0</div></li> 
+        </ul>
+        
+    </nav>
+
+    <div class="slider">
+        <div class="slides">
+            
+            <img class="slide" src="../images/61WuUfemVCL._AC_SL1200_.jpg" alt="Image 1">
+            <img class="slide" src="../images/61VuVU94RnL._AC_SL1500_.jpg" alt="Image 2">
+            <img class="slide" src="../images/51Xf1gqI21L._AC_SL1500_.jpg" alt="Image 3">
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+  
+    <div id="categoryWrapper">
+        <div id="categoryButtons">
+            <button onclick="showAllProducts()">All Products</button>
+            <button onclick="showProducts2('phones')">Phones</button>
+            <button onclick="showProducts2('tablets')">Tablets</button>
+            <button onclick="showProducts2('laptops')">Laptops</button>
+        </div>
+    </div>
+
+   
+    <div id="productDisplay">
+        
+    </div>
+
+
+
+    <footer>
+        <p>&copy; 2024 Created By Omar Osama. All Rights Reserved.</p>
+    </footer>
+    <button id="scrollTopBtn">Back to Top</button>
+    <script src="../JS/homepage.js"></script>
+
+</body>
+</html>
